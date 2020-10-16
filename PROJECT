@@ -1,0 +1,10 @@
+domain: crit.sh
+repo: github.com/criticalstack/machine-api-provider-aws
+resources:
+- group: infrastructure
+  kind: AWSMachine
+  version: v1alpha1
+- group: infrastructure
+  kind: AWSInfrastructureProvider
+  version: v1alpha1
+version: "2"
