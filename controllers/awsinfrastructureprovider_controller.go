@@ -58,7 +58,7 @@ func (r *AWSInfrastructureProviderReconciler) SetupWithManager(mgr ctrl.Manager,
 // +kubebuilder:rbac:groups=infrastructure.crit.sh,resources=awsinfrastructureproviders,verbs=get;list;watch
 // +kubebuilder:rbac:groups=infrastructure.crit.sh,resources=awsinfrastructureproviders/status,verbs=create;update
 // +kubebuilder:rbac:groups=machine.crit.sh,resources=infrastructureproviders;infrastructureproviders/status,verbs=get;list;watch
-// +kubebuilder:rbac:groups=,resources=secrets,verbs=*
+// +kubebuilder:rbac:groups="",resources=secrets,verbs=*
 
 func (r *AWSInfrastructureProviderReconciler) Reconcile(req ctrl.Request) (_ ctrl.Result, reterr error) {
 	ctx := context.Background()
